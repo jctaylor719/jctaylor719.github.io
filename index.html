@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Menu Button -->
+    <div id="overlay"></div>
+    <div id="menu-bar">
+        <button onclick="toggleMenu()">≡</button>
+        <!-- Add your menu items here -->
+        <ul class="transition">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <!-- End Menu Button-->
+    <div class="home-container">
+
+        <!-- Welcome -->
+        <div class="home-profile">
+            <div id="portrait">
+                <img src="css/images/my-picture.jpg" alt="Portrait" id="portrait-img"/>
+            </div>
+            
+            <div class="home-profile-bio">
+                <h5>Hello, World! 🌍</h5>
+                <h1>I'm Jessica Taylor 
+                    <br> I am a <span style="color: yellow">Computer Scientist</span>
+                </h1>
+                <div class="underline"></div>
+                <div class="home-contact">
+                    <div class="home-contact-box">
+                        <img src="css/images/icons/icons8-location-50.png" alt="Location icon" />
+                        <h5>Carmel, IN</h5>
+                    </div>
+                    <div class="home-contact-box">
+                        <img src="css/images/icons/icons8-phone-32.png" alt="Phone icon" />
+                        <a href="tel:+3177191191">
+                            <h5>317-719-1191</h5>
+                        </a>
+                    </div>
+                    <div class="home-contact-box">
+                        <img src="css/images/icons/icons8-email-48.png" alt="Email icon" />
+                        <a href="mailto:jctaylor719@gmail.com">
+                            <h5>jctaylor719@gmail.com</h5>
+                        </a>
+                    </div>
+                    <div class="home-contact-box">
+                        <img src="css/images/icons/icons8-linkedin-50.png" alt="LinkedIn icon" />
+                        <a href="https://www.linkedin.com/in/jctaylor719/" target="_blank">
+                            <h5>jctaylor719</h5>
+                        </a>
+                    </div>
+                    <div class="home-contact-box">
+                        <img src="css/images/icons/icons8-github-48.png" alt="Github icon" />
+                        <a href="https://github.com/jctaylor719" target="_blank">
+                            <h5>jctaylor719</h5>
+                        </a>
+                    </div>
+                    <div class="home-contact-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biography -->
+        <div class="biography">
+            <p>
+                I'm a Computer Science graduate who is deeply passionate about web development, 
+                programming, data science, and artificial intelligence. My 
+                academic background has equipped me with a strong foundation in algorithms, 
+                data structures, and software engineering principles. In my career, I've had 
+                the opportunity to work on diverse projects, ranging from creating interactive
+                websites to analyzing large datasets using linear regression. I value continuous 
+                learning, complex problem solving, and a collaborative work environment. 
+            </p>
+        </div>
+
+        <!-- What I Do -->
+        <div class="what-i-do">
+            <div class="heading-container">
+                <h1>What I do:</h1>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="css/images/icons/icons8-computer-64.png" alt="Computer icon" />
+                    <h5>Web Dev</h5>
+                </div>
+                <div class="box">
+                    <img src="css/images/icons/icons8-website-bug-100.png" alt="Computer bug icon" />
+                    <h5>Programming</h5>
+                </div>
+                <div class="box">
+                    <img src="css/images/icons/icons8-combo-chart-64.png" alt="Combo chart icon" />
+                    <h5>Data Science</h5>
+                </div>
+                <div class="box">
+                    <img src="css/images/icons/icons8-mind-map-100.png" alt="Mind map icon" />
+                    <h5>Machine Learning</h5>
+                </div>
+                <div class="box">
+                    <img src="css/images/icons/icons8-game-64.png" alt="Game controller icon" />
+                    <h5>Game Dev</h5>
+                </div>
+                <div class="box">
+                    <img src="css/images/icons/icons8-paint-palette-64.png" alt="Paint pallette icon" />
+                    <h5>Digital Art</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="references">
+            <div class="heading-container">
+                <h1>References:</h1>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="row-layout">
+                        <img src="css/images/icons/icons8-quote-100.png" alt="Quotation mark icon" />
+                        <p>
+                            Jessica stands out in the field of data science and analytics. 
+                            Her unique blend of technical proficiency and interpersonal abilities makes 
+                            her a valuable asset for tackling and analyzing complex problems.
+                        </p>    
+                    </div>
+                    <div class="underline"></div>
+                    <div class="row-layout">
+                        <img src="css/images/references/leo-milletary.jpg" alt="Picture of Leo Milletary" class="portrait"/>
+                        <div class="col-layout">
+                            <a href="https://www.linkedin.com/in/leo-milletary-439909196/" target="_blank"><h4>Leo Milletary</a><br><span class="title">Portfolio Analyst</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="row-layout">
+                        <img src="css/images/icons/icons8-quote-100.png" alt="Quotation mark icon" />
+                        <p>
+                            I'm impressed by her robust development skills.
+                            Her proficiency in React, along with extensive experience in HTML, CSS, 
+                            and JavaScript, makes her an ideal candidate for software development roles.
+                        </p>    
+                    </div>
+                    <div class="underline"></div>
+                    <div class="row-layout">
+                        <img src="css/images/references/noland-shirley.jpg" alt="Picture of Noland Shirley" class="portrait"/>
+                        <div class="col-layout">
+                            <a href="https://www.linkedin.com/in/nolandshirley/" target="_blank"><h4>Noland Shirley</a><br><span class="title">Software Developer</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="row-layout">
+                        <img src="css/images/icons/icons8-quote-100.png" alt="Quotation mark icon" />
+                        <p>
+                            Jessica's previous role as a Barista at Barnes & Noble reflects her commitment to 
+                            quality service. Her attention to detail and work ethic
+                            makes her an excellent fit for customer-centric positions.
+                        </p>    
+                    </div>
+                    <div class="underline"></div>
+                    <div class="row-layout">
+                        <img src="css/images/references/bo-sendi.jpg" alt="Picture of Bo Sendi" class="portrait"/>
+                        <div class="col-layout">
+                            <a href="https://www.linkedin.com/in/bo-sendi-591636237/" target="_blank"><h4>Bo Sendi</a><br><span class="title">Customer Service Specialist</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="underline" style="margin-top: 8vh;"></div>
+
+        <!-- Footer -->
+
+        <footer>
+            <p class="copyright">&copy; 2024 Jessica Taylor's Portfolio | All rights reserved | Made from scratch</p><br>
+            <p>All icons made by <a href="https://icons8.com" target="_blank">Icons8</a>: 
+                <a target="_blank" href="https://icons8.com/icon/7880/location">Location</a> | 
+                <a target="_blank" href="https://icons8.com/icon/A6mjl7DbSEd0/phone">Phone</a> | 
+                <a target="_blank" href="https://icons8.com/icon/L9Mi606ZCOUt/at-sign">Email</a> | 
+                <a target="_blank" href="https://icons8.com/icon/8808/linkedin">LinkedIn</a> | 
+                <a target="_blank" href="https://icons8.com/icon/s1rwrv9mNnN4/github">GitHub</a> |
+                <a target="_blank" href="https://icons8.com/icon/48603/workstation">Computer</a> | 
+                <a target="_blank" href="https://icons8.com/icon/f103Pm7GmbrD/website-bug">Website Bug</a> |  
+                <a target="_blank" href="https://icons8.com/icon/sX3DtKn5bwmc/combo-chart">Combo Chart</a> | 
+                <a target="_blank" href="https://icons8.com/icon/1763/mind-map">Mind Map</a> | 
+                <a target="_blank" href="https://icons8.com/icon/81939/game-controller">Game Controller</a> | 
+                <a target="_blank" href="https://icons8.com/icon/43435/paint-palette">Paint Palette</a> | 
+                <a target="_blank" href="https://icons8.com/icon/37947/get-quote">Quote</a>
+            </p>
+        </footer>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

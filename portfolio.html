@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Menu Button -->
+    <div id="overlay"></div>
+    <div id="menu-bar">
+        <button onclick="toggleMenu()">≡</button>
+        <!-- Add your menu items here -->
+        <ul class="transition">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <!-- End Menu Button-->
+    <div class="home-container">
+        <div class="heading-container new-page">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category-btn active" onclick="filterProjects('all')">All Categories</button>
+            <button class="category-btn" onclick="filterProjects('Web Dev')">Web Dev</button>
+            <button class="category-btn" onclick="filterProjects('Programming')">Programming</button>
+            <button class="category-btn" onclick="filterProjects('Data Science')">Data Science</button>
+            <button class="category-btn" onclick="filterProjects('Machine Learning')">Machine Learning</button>
+            <button class="category-btn" onclick="filterProjects('Game Dev')">Game Dev</button>
+        </div>
+
+        <div class="grid-container">
+            <!-- Grid items with random categories and project names -->    
+            <div class="grid-item" data-category="Data Science">
+                <a href="https://github.com/jctaylor719/DataScience/tree/main/ImpactOfCovid" target="_blank">
+                    <img src="css/images/portfolio/mask.jpg" alt="Woman wearing mask">
+                    <div class="overlay">
+                        <p>Data Science</p>
+                        <p>Analyzing the Impact of COVID-19 on Minority Populations</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-item" data-category="Machine Learning">
+                <a href="https://github.com/jctaylor719/MachineLearning/tree/main/Capstone" target="_blank">
+                    <img src="css/images/portfolio/car.jpg" alt="Car Image">
+                    <div class="overlay">
+                        <p>Machine Learning</p>
+                        <p>Vehicle Interaction for Autonomous Driving</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid-item" data-category="Programming">
+                <a href="https://github.com/jctaylor719/VideoProcessing/tree/main/RoutePanorama" target="_blank">
+                    <img src="css/images/portfolio/route.jpg" alt="Car with trees">
+                    <div class="overlay">
+                        <p>Programming</p>
+                        <p>Route Panorama</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid-item" data-category="Programming">
+                <a href="https://github.com/jctaylor719/Leetcode/tree/main/10.RegularExpressionMatching" target="_blank">
+                    <img src="css/images/portfolio/math.jpg" alt="Math book">
+                    <div class="overlay">
+                        <p>Programming</p>
+                        <p>Regular Expression Matching</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid-item" data-category="Game Dev">
+                <a href="https://github.com/jctaylor719/GameDevelopment/tree/main/BullseyeAndBrownie" target="_blank">
+                    <img src="css/images/portfolio/catanddog.jpg" alt="Cat and dog">
+                    <div class="overlay">
+                        <p>Game Dev</p>
+                        <p>Bullseye and Brownie</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid-item" data-category="Web Dev">
+                <a href="https://github.com/jctaylor719/ZoeHitzemannWebsite" target="_blank">
+                    <img src="css/images/portfolio/hairstylist.jpg" alt="Hairstylist">
+                    <div class="overlay">
+                        <p>Web Dev</p>
+                        <p>Commissioned Hairstylist Website hi</p>            
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-item" data-category="Web Dev">
+                <a href="https://github.com/jctaylor719/DeniseTaylorWebsite" target="_blank">
+                    <img src="css/images/portfolio/interior.jpg" alt="Well-designed rooom">
+                    <div class="overlay">
+                        <p>Web Dev</p>
+                        <p>Commissioned Interior Designer Website</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-item" data-category="Web Dev">
+                <a href="https://github.com/jctaylor719/WebDevelopment/tree/main/ArtCommission" target="_blank">
+                    <img src="css/images/portfolio/form.jpg" alt="Form with pen">
+                    <div class="overlay">
+                        <p>Web Dev</p>
+                        <p>Advanced Form Validation</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid-item" data-category="Web Dev">
+                <a href="https://findingtroubleband.com/" target="_blank">
+                <img src="css/images/portfolio/band.jpg" alt="Drummer drumming">
+                <div class="overlay">
+                    <p>Web Dev</p>
+                    <p>Commissioned 'Finding Trouble' Band Website</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="underline" style="margin-top: 10vh; margin-bottom: 10vh"></div>
+
+        <!-- Footer -->
+
+        <footer>
+            <p class="copyright">&copy; 2024 Jessica Taylor's Portfolio | All rights reserved | Made from scratch</p><br>
+            <p>All photos used are royalty-free and were found using <a href="https://www.pexels.com/" target="_blank">Pexels</a>: <br><br>
+                <div class="footer-link-container">
+                    <div class="footer-left">
+                        <a target="_blank" href="https://www.pexels.com/photo/black-woman-putting-on-respirator-5938389/">Photo by Sora Shimazaki: Woman Wearing a Mask</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/opened-book-240163/">Photo by Deepak Gautam: Math Textbook</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/turned-off-flat-screen-tv-276724/">Photo by Pixabay: Designer Living Room</a> <br>
+                    </div>
+                    <div class="footer-center">
+                        <a target="_blank" href="https://www.pexels.com/photo/man-holding-the-steering-wheel-while-driving-620335/">Photo by Tobi: Man Driving Car</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-46024/">Photo by Snapwire: Cat and Dog</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/black-pen-placed-on-white-paper-261679/">Photo by Pixabay: Paper and Pen</a> <br>
+                    </div>
+                    <div class="footer-right">
+                        <a target="_blank" href="https://www.pexels.com/photo/sports-car-on-a-road-12191040/">Photo by Ibrahim Bilgin: Car in the Woods</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/woman-getting-a-haircut-3992876/">Photo by Cottonbro Studio: Hairstylist</a> <br>
+                        <a target="_blank" href="https://www.pexels.com/photo/tilt-shift-photo-of-acoustic-drum-set-995301/">Photo by Josh Sorenson: Playing the Drums</a> <br>
+                    </div>
+                </div>
+            </p>
+        </footer>
+        <div class="spacer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
